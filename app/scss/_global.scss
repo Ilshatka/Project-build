@@ -1,0 +1,66 @@
+body {
+  @include text-style;
+}
+
+//wrapper
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+//content
+.content {
+  flex: 1 0 100%;
+}
+
+//container
+.container {
+  margin: 0 auto;
+  max-width: $containerMaxWidth;
+  @media (max-width: $breakpoint1400) {
+    max-width: 1150px;
+  }
+  @media (max-width: $breakpoint1200) {
+    max-width: 950px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 750px;
+  }
+  @media (max-width: $breakpoint768) {
+    padding: 0 15px;
+    max-width: none;
+  }
+  @media (max-width: $breakpoint578) {
+    padding: 0 10px;
+  }
+}
+
+
+//for hover__________________________//
+
+// @media(hover: hover) and (pointer: fine) {
+
+// }
+
+
+//animation__________________________//
+
+// @keyframes someAnimation {
+//   0% {
+
+//   }
+//   50% {
+
+//   }
+//   100% {
+
+//   }
+// }
+
+// .block {
+//   animation-name: someAnimation;
+//   animation-duration: 1s;
+//   animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+// }
+
